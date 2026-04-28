@@ -29,6 +29,6 @@ func main() {
 	r := router.New(database)
 
 	addr := ":8080"
-	fmt.Printf("🎵 Concerts API running at http://localhost%s\n", addr)
+	fmt.Printf("Concerts API running at http://localhost%s\n", addr)
 	log.Fatal(http.ListenAndServe(addr, r))
 }
