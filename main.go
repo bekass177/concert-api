@@ -10,8 +10,6 @@ import (
 )
 
 func main() {
-	// Database connection config
-	// Change these values to match your setup
 	database, err := db.Connect(db.Config{
 		Host:     "localhost",
 		Port:     5432,
@@ -25,7 +23,7 @@ func main() {
 	}
 	defer database.Close()
 
-	// Build router
+
 	r := router.New(database)
 
 	addr := ":8080"
